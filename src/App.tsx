@@ -21,9 +21,11 @@ import AdoptionTimelinePage from "./pages/AdoptionTimelinePage";
 import ModalPreview from "./pages/ModalPreview";
 import StatusPollingDemo from "./pages/StatusPollingDemo";
 import CustodyTimelinePage from "./pages/CustodyTimelinePage";
+
 import AdminApprovalQueuePage from "./pages/AdminApprovalQueuePage";
 import AdminDisputeListPage from "./pages/AdminDisputeListPage";
 import DisputeDetailPage from "./pages/DisputeDetailPage";
+import ShelterApprovalQueuePage from "./pages/ShelterApprovalQueuePage";
 import MyDisputesPage from "./pages/MyDisputesPage";
 
 function App() {
@@ -66,6 +68,12 @@ function App() {
         <Route
           path="/admin/approvals"
           element={<AdminApprovalQueuePage />}
+        />
+
+        {/* Shelter Approvals */}
+        <Route
+          path="/shelter/approvals"
+          element={<ShelterApprovalQueuePage />}
         />
 
         <Route
